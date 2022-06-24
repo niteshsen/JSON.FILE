@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <H2>JSON</H2>
+    <P id="demo"></P>
+    
+    
+    <P id="demo2"></P>
+    <P id="demo3"></P>
+    <P id="demo4"></P>
+    <script>
+        const myDetails = '{"name": "prem", "ages":50, "car": "Creta"}';
+        const object = JSON.parse(myDetails);
+        document.getElementById("demo").innerHTML = object.car;
+    </script>
+
+
+    <h2>JSON example</h2>
+    <P id="demo1"></P>
+    <script>
+    const schoolData = {
+     "SchoolName": "SBOA",
+     "year": 1988, 
+     "Rank": 1,
+     "students": 1000};
+    // const Objectone =  JSON.parse(schoolData);
+    
+    document.write("School Name = " +schoolData.SchoolName);
+    document.write("<br>");
+    document.write("Year = " +schoolData.year);
+    document.write("<br>");
+    document.write("Rank in the city = "+schoolData.Rank);
+    document.write("<br>");
+    document.write("Number of studying  = " +schoolData.students);
+    </script>
+
+</body>
+</html>
